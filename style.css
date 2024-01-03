@@ -241,18 +241,32 @@ section{
 }
 
 /* designing the loader */
-*{
-    padding: 0;
+body.preloader-visible {
     margin: 0;
-}
-#loading{
-    position: fixed;
-    width: 100%;
+    font-family: Arial, sans-serif;
     height: 100vh;
-    background: #fff url('https://loading.io/asset/713043') no-repeat center;
-    z-index: 99999;
-}
-@keyframes rotate {
+    background-color: #f4f4f4;
+    /* Add any other styles you want to apply to the body element while the preloader is visible */
+  }
+
+  .preloader-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .preloader {
+    border: 8px solid #3498db;
+    border-top: 8px solid #f4f4f4;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite; /* Rotate the preloader infinitely over 1 second */
+  }
+
+  @keyframes spin {
     0% {
       transform: rotate(0deg);
     }
@@ -261,12 +275,12 @@ section{
     }
   }
 
-  .rotating-image {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-    animation: rotate 5s linear infinite; /* Rotate the image infinitely over 5 seconds */
+  /* Optional: Style your main content */
+  main {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
   }
+  
 /* designing the loader */
 
 /* media queries */
