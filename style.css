@@ -240,6 +240,34 @@ section{
     border: 1px solid var(--blue);
 }
 
+/* designing the loader */
+*{
+    padding: 0;
+    margin: 0;
+}
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff url('https://loading.io/asset/713043') no-repeat center;
+    z-index: 99999;
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .rotating-image {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation: rotate 5s linear infinite; /* Rotate the image infinitely over 5 seconds */
+  }
+/* designing the loader */
 
 /* media queries */
 @media(max-width:991px){

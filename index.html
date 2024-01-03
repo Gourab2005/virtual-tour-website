@@ -16,7 +16,14 @@
 
 </head>
 
-<body>
+<body onload="loadfunc()">
+
+    <!-- loader part starts -->
+
+    <div id="loading "></div>
+
+    <!-- loder part end-->
+
 
     <!-- Header section starts -->
 
@@ -149,6 +156,12 @@
     <script src="JS/script.js"></script>
     <script src="JS/inanimation.js"></script>
     <script src="JS/entry_animation2.js"></script>
+    <script>
+        var preloader = document.getElementById('loading');
+        function loadfunc(){
+            preloader.style.display = 'none';
+        }
+    </script>
 </body>
 
 </html>
