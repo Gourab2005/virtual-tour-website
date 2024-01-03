@@ -38,6 +38,7 @@ html{
     color: white;
     background-color: black;
     border-radius: 2rem; ;
+    margin-top: 2rem;
 }
 .heading span{
     text-transform: uppercase;
@@ -162,7 +163,9 @@ section{
     border: 2px solid white;
     border-radius: 3rem;
 }
-
+.ticketbooking{
+    text-align: center;
+}
 .services .boxcontainer{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem,1fr));
@@ -258,7 +261,7 @@ body.preloader-visible {
   }
 
   .preloader {
-    border: 8px solid #3498db;
+    border: 8px solid #fff700;
     border-top: 8px solid #f4f4f4;
     border-radius: 50%;
     width: 50px;
@@ -282,6 +285,18 @@ body.preloader-visible {
   }
   
 /* designing the loader */
+
+/* designing aboutus section */
+.aboutus p{
+    display: block;
+    font-size: 2rem;
+    padding: 3rem;
+    color: white;
+    border: 3px solid yellow;
+    text-align: justify;
+    margin-top: 1rem;
+    border-radius: 2rem;
+}
 
 /* media queries */
 @media(max-width:991px){
